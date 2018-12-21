@@ -15,8 +15,8 @@ difference() {
     }
     
      // camera lens bottom hole
-    translate([62.5,27,0]) {
-       color([0,1,0]) cylinder(h=1,d=2,
+    translate([62.5,27,-1]) {
+       color([0,1,0]) cylinder(h=3,d=2,
        $fn=50);
     }
    
@@ -27,17 +27,17 @@ difference() {
     }
     
     // camera mounting holes top
-    translate([61.75,37,-1]) {cylinder(h=9, d=2,
+    translate([61.75,37,-1]) {cylinder(h=12, d=2,
     $fn=50);
     }
-    translate([74.5,37,-1]) {cylinder(h=9, d=2,
+    translate([74.5,37,-1]) {cylinder(h=12, d=2,
     $fn=50);
     }
     // camera mounting holes bottom
-    translate([61.75,16,-1]) {cylinder(h=9, d=2,
+    translate([61.75,16,-1]) {cylinder(h=12, d=2,
     $fn=50);
     }
-    translate([74.5,16,-1]) {cylinder(h=9, d=2,
+    translate([74.5,16,-1]) {cylinder(h=12, d=2,
     $fn=50);
     }
     
@@ -47,12 +47,12 @@ difference() {
     }
     
     // Guide holes in each corner
-    translate([25,50,-1]) cylinder(h=9, d=5,
+    translate([25,50,-1]) cylinder(h=12, d=5,
     $fn=50);
-    translate([85,5,-1]) cylinder(h=9, d=5,
+    translate([85,5,-1]) cylinder(h=12, d=5,
     $fn=50);
-    translate([25,5,-1]) cylinder(h=9, d=5,
+    translate([25,5,-1]) cylinder(h=12, d=5,
     $fn=50);
-    translate([85,50,-1]) cylinder(h=9, d=5,
+    translate([85,50,-1]) cylinder(h=12, d=5,
     $fn=50); 
 }
