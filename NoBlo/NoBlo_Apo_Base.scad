@@ -1,11 +1,11 @@
 
-// WMD -- Wind Mitigation Device
+// NoBlo -- Wind Mitigation Device
 difference() {
     union() {
-        // GSB Base
-        cube([73,30,1.75]);
+        // NoBlo Base
+        cube([73,30,2]);
         
-        // GSB Sides
+        // NoBlo Sides
         translate([2, 0, 1.75]) {
             color([1,0,0])
             cube([69,2,8]);
@@ -14,7 +14,7 @@ difference() {
             color([0,0,1])
             cube([69,2,8]);
         }
-       // GSB Rear
+       // NoBlo Rear
        translate([0, 0, 1.75]) {
              color([0,1,0])
              cube([2,30,8]);
@@ -30,19 +30,19 @@ difference() {
        // Right caliper hard point circle
        translate([73,30,0]) {
            color([0,1,1])
-           cylinder(h=1.75, d=7, $fn=50);
+           cylinder(h=2, d=7, $fn=50);
        }
        
        // Right caliper hard point rectangle
        translate([73,0,0]) {
            color([1,1,0])
-           cube([2,27,1.75]);
+           cube([2,27,2]);
        }
        
-         // GSB Front
-       translate([69, 2, 5]) {
+         // NoBlo Front
+       translate([69, 2, 6]) {
              color([1,1,1])
-             cube([2,26,4.75]);
+             cube([2,26,3.75]);
        }
        
        // Door Slide Left
@@ -103,9 +103,9 @@ difference() {
    }
       
     // Slide Well
-    translate([40,14.5,-1]) cylinder_outer(8,7.5,100);
+    translate([40,15,-1]) cylinder_outer(8,7.5,100);
     // Objective Hole
-    translate([40,14.5,24]) cylinder_outer(5,9,100);
+    translate([40,15,24]) cylinder_outer(5,9,100);
 }
 
 module cylinder_outer(height,radius,fn){
