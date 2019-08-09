@@ -1,16 +1,10 @@
  union() {
         // GSB Door
-        cube([30,27,1]);
+        cube([12,24,1.75]);
      
-        // Door Stop
-        translate([28,2,1]) {
-            color([1,0,0])
-            cube([1,23,2]);
-        }
-        
         // Door Handle
-        translate([0,0,1]) {
+        translate([0,0,1.75]) {
             color([0,1,0])
-            cube([2,27,4]);
+            cube([2,24,8]);
         }
  }
