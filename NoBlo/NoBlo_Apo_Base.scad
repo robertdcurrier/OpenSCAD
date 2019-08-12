@@ -20,7 +20,16 @@ difference() {
              cube([2,30,8]);
        }
       
-       
+      // Guide Cubes
+       translate([0,0,9.75]) {
+            color([0,0,0])
+            cube([2,2,2]);     
+      }
+      translate([0,28,9.75]) {
+            color([0,0,0])
+            cube([2,2,2]);     
+      }
+          
        // Left caliper hard point
        translate([-5,6,0]) {
            color([1,0,1])
@@ -38,27 +47,7 @@ difference() {
            color([0,1,0])
            cube([2,27,2]);
        }
-       
-       // Top Peg nipples
-       translate([4,1,10]) {
-           color([0,0,0])
-           cylinder_outer(1, .5, 50);
-       }
-        
-       translate([67,1,10]) {
-         color([0,0,0])
-         cylinder_outer(1, .5, 50);
-       }
-        translate([67,29,10]) {
-         color([0,0,0])
-         cylinder_outer(1, .5, 50);
-       }
-        translate([4,29,10]) {
-         color([0,0,0])
-         cylinder_outer(1, .5, 50);
-       }  
    }
-      
     // Slide Well
     translate([40,15,-1]) cylinder_outer(8,7.5,100);
     // Objective Hole

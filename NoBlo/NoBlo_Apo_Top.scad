@@ -17,32 +17,20 @@ difference() {
     translate([40,14.5,-2]) {
         cylinder_outer(8,10,100);
     }
-
+    
     // Door Hole
-    difference() {
-        translate([71, 2.25, -2]) {
-            cube([2,25.75,6]);
-        }
+    translate([71, 2.25, -2]) {
+      cube([2,25.75,6]);
     }
-
- // Top Nipple Holes
-       translate([4,1.4,-2]) {
-           color([0,0,0])
-           cylinder_outer(4, 1, 50);
-       }
-        translate([67,1.4,-2]) {
-           color([0,0,0])
-           cylinder_outer(4, 1, 50);
-       }
-        translate([67,28.6,-2]) {
-           color([0,0,0])
-           cylinder_outer(4, 1, 50);
-       }
-       translate([4,28.6,-2]) {
-           color([0,0,0])
-           cylinder_outer(4, 1, 50);
-       }
-   }
+    
+    // Guide Cubes
+    translate([0,0,-2]) {
+        cube([2,2,12]);     
+      }
+      translate([0,28,-2]) {
+        cube([2,2,12]);     
+      }
+ }
    
  // Optical tube
    difference() {
